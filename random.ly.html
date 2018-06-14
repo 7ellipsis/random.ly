@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>Random.ly</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <style>
+       #footer
+   {
+       bottom: 0px;
+       width: 120%;
+       color:ivory;
+       position:absolute;
+       opacity:0.6;
+       filter: contrast(100%);
+       filter: brightness(100%);
+       left:0px;
+   }
+   #footer hover
+   {
+       opacity: 1;
+   }
+
+    body{
+        background: linear-gradient(294deg, #1c2272, #696fca, #0d74a5, #841c9b, #ff6700, #b01d43, #0b0104, #bf2150);
+background-size: 1600% 1600%;
+
+-webkit-animation: AnimationName 120s ease infinite;
+-moz-animation: AnimationName 120s ease infinite;
+animation: AnimationName 120s ease infinite;
+
+
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+    </style>
+</head>
+<body style="font-family: 'Pacifico', cursive; ">
+<div class="container-fluid">
+    <div class="row">
+   <div style="margin-top: 20%;font-size: 30px;margin-left: 20px;" class="col-md-6"> Random.ly<br>
+    A random small bit.ly link creator!<br>
+    Surprises Ahead!</div>
+    <div class="col-md-6" style="font-size: 20px; margin-left: 69%;margin-top: -7%">
+        <span id="link">bit.ly/c4R5yw</span>
+    </div>
+</div>
+</div>
+<script>
+    $(document).ready(function(){
+        var a = "";
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+while (a.length < 1) {
+  a += alphabet[Math.floor(Math.random() * alphabet.length)];
+} 
+
+var b = "";
+var alphabet1 = "ABCDEFGHIJK;MNOPQRSTUVWXYZ";
+
+while (b.length < 1) {
+  b += alphabet1[Math.floor(Math.random() * alphabet1.length)];
+} 
+
+var c = "";
+var alphabet2 = "0123456789";
+
+while (c.length < 1) {
+  c += alphabet2[Math.floor(Math.random() * alphabet2.length)];
+} 
+var d = "";
+var alphabet3 = "abcdefghijklmnopqrstuvwxyz";
+
+while (d.length < 1) {
+  d += alphabet3[Math.floor(Math.random() * alphabet3.length)];
+} 
+
+var e = "";
+var alphabet4 = "ABCDEFGHIJK;MNOPQRSTUVWXYZ";
+
+while (e.length < 1) {
+  e += alphabet4[Math.floor(Math.random() * alphabet4.length)];
+} 
+
+var f = "";
+var alphabet5 = "0123456789";
+
+while (f.length < 1) {
+  f += alphabet5[Math.floor(Math.random() * alphabet5.length)];
+} 
+
+
+var tr=[a,b,c,d,e,f];
+var k="";
+k = k + tr[Math.floor(Math.random()*tr.length)]+ tr[Math.floor(Math.random()*tr.length)]+ tr[Math.floor(Math.random()*tr.length)]+ tr[Math.floor(Math.random()*tr.length)]+ tr[Math.floor(Math.random()*tr.length)]+ tr[Math.floor(Math.random()*tr.length)];
+var yu="https://bit.ly/";
+yu+=k;
+        $("#link").html("bit.ly/"+k);
+        $("#link").click(function(){
+            window.open(yu, "amz");
+        })
+    })
+
+    </script>
+    <div class="container-fluid">
+            <div class="row">
+               
+         <footer style="background-color: black; position:fixed; width: 100%" id="footer">
+                <center> <span id="ontop">
+                 <a href="https://www.facebook.com/aashay7" target="_blank"><i class="fa fa-facebook-square"></i></a>&nbsp&nbsp&nbsp&nbsp
+                     <a href="https://github.com/7ellipsis" target="_blank"><i class="fa fa-github"></i></a>&nbsp&nbsp&nbsp&nbsp
+                         <a href="https://www.instagram.com/the.fenris/" target="_blank"><i class="fa fa-instagram"></i></a>&nbsp&nbsp&nbsp&nbsp
+                             <a href="https://www.linkedin.com/in/ashay-mandwarya-7094a9a4/" target="_blank"><i class="fa fa-linkedin-square"></i></a>&nbsp&nbsp&nbsp&nbsp
+                                 <a href=""> <i class="fa fa-medium"></i></a>&nbsp&nbsp&nbsp&nbsp
+                                     <a href="https://www.quora.com/profile/Ashay-Mandwarya" target="_blank"><i class="fa fa-quora"></i></a>&nbsp&nbsp&nbsp&nbsp
+                                     <a href="mailto:ashaymurceilago@gmail.com"><i class="fa fa-address-card"></i></a>
+                                        <span style="float: right">ashay mandwarya</span>
+                 </span></center>
+         </footer>
+            </div>
+            </div>
+</body>
+</html>
